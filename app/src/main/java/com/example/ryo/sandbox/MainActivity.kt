@@ -28,5 +28,11 @@ class MainActivity : AppCompatActivity() {
 
             startActivityForResult(intent,RESULT_SUBACTIVITY)
         }
+
+        val restBtn: Button = findViewById(R.id.rest)
+        restBtn.setOnClickListener {
+            val intent = Intent(this, RestActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
